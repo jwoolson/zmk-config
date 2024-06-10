@@ -14,12 +14,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  1  |  2  |   3  |   4   |   5   |                     |   6   |  7    |  8   |  9   |   0   |  + =  |
-            // |  TAB  |  Q  |  W  |   E  |   R   |   T   |                     |   Y   |  U    |  I   |  O   |   P   |  - _  |
-            // |   L1  |  A  |  S  |   D  |   F   |   G   |                     |   H   |  J    |  K   |  L   |   '   |  L1   |
-            // | SHIFT |  Z  |  X  |   C  |   V   |   B   | ALFRED   | | ALFRED |   N   |  M    |  ,   |  .   |   /   | SHIFT |
-            //                     | CTRL |ALT/DEL|CMD/BKS| SPACE/L1 | | SPC/L1 |CMD/BKS|ALT/DEL| CTRL |
+            // ----------------------------------------------------------------------------------------------------------------
+            // |  ESC  |  1  |  2  |   3  |   4   |   5   |                      |   6   |  7    |  8   |  9   |   0   |  + =  |
+            // |  TAB  |  Q  |  W  |   E  |   R   |   T   |                      |   Y   |  U    |  I   |  O   |   P   |  - _  |
+            // |   L1  |  A  |  S  |   D  |   F   |   G   |                      |   H   |  J    |  K   |  L   |   '   |  L1   |
+            // | SHIFT |  Z  |  X  |   C  |   V   |   B   |  ALFRED  || ALFRED   |   N   |  M    |  ,   |  .   |   /   | SHIFT |
+            //                     | CTRL |ALT/DEL|CMD/BKS| SPACE/L1 || SPACE/L1 |CMD/BKS|ALT/DEL| CTRL |
 
             bindings = <
 &kp ESC           &kp N1  &kp N2  &kp N3     &kp N4               &kp N5                                                  &kp N6                  &kp N7                &kp N8     &kp N9   &kp N0    &kp EQUAL
@@ -34,11 +34,11 @@
 
         lower_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
+            // |   ~    |     | BT2 |  BT3 |  BT4 |  BT5 |                      |      |       |       |      |       |       |
+            // |   `   |  F2 |  F3 |  F4  |  F5  |  F6  |                      |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
+            // |       |  !  |  @  |  #   |  $   |  %   |                      |  ^   |  &    |  *    |  (   |   )   |   ~   |
+            // |       |     |     |      |      |      | CLIPBD   | | CLIPBD  |      |  _    |  +    |  {   |   }   |  "|"  |
+            //                     |      |      |      | SPACE/L2 | | SPACE/L2|      |       |       |
 
             bindings = <
 &kp TILDE               &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp HOME                                                         &kp HOME                  &trans              &kp K_PREVIOUS   &kp K_NEXT       &kp K_MUTE        &kp C_VOL_UP
@@ -53,7 +53,7 @@
 
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                    |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
             // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
             // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
