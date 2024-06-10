@@ -22,11 +22,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                  &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp EQUAL
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                   &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&kp RET    &kp A   &kp S   &kp D     &kp F     &kp G                                   &kp H   &kp J     &kp K      &kp L    &kp SQT   &kp RET
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LG(SPACE)    &kp RG(SPACE)  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &lt 1 SPACE      &lt 1 SPACE    &mo 2   &kp BSPC  &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3     &kp N4               &kp N5                                                  &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp EQUAL
+&kp TAB    &kp Q   &kp W   &kp E      &kp R                &kp T                                                   &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&lt 1 RET  &kp A   &kp S   &kp D      &kp F                &kp G                                                   &kp H   &kp J     &kp K      &kp L    &kp SQT   &lt 1 RET
+&kp LSHFT  &kp Z   &kp X   &kp C      &kp V                &kp B                   &kp LG(SPACE)    &kp RG(SPACE)  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp LCTRL  &mt LEFT_ALT DELETE  &mt LEFT_GUI BACKSPACE  &lt 1 SPACE      &lt 1 SPACE    &mo 2   &kp BSPC  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
