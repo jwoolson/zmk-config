@@ -41,11 +41,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp TILDE               &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp HOME                                               &kp HOME                  &trans              &kp K_PREVIOUS  &kp K_NEXT       &kp K_MUTE        &kp C_VOL_UP
-&mt LEFT_COMMAND GRAVE  &trans                &kp LA(LEFT_ARROW)     &kp UP_ARROW              &kp LA(RIGHT_ARROW)        &kp PAGE_UP                                            &kp PAGE_UP               &kp RA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT)    &kp K_PLAY_PAUSE  &mt RIGHT_COMMAND K_VOLUME_DOWN
-&trans                  &trans                &kp LEFT_ARROW         &kp DOWN_ARROW            &kp RIGHT_ARROW            &kp PAGE_DOWN                                          &kp PAGE_DOWN             &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans            &trans
-&mt LEFT_SHIFT CAPS     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE            &kp RIGHT_BRACE            &kp END        &kp LG(LA(SPACE))    &kp RG(RA(SPACE))  &kp END                   &kp PIPE            &kp SEMICOLON   &kp COLON        &kp BACKSLASH     &mt RIGHT_SHIFT CAPSLOCK
-                                                                     &trans                    &trans                     &trans         &mo 2                &mo 2              &mt RIGHT_COMMAND ESCAPE  &trans              &trans
+&kp TILDE               &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp HOME                                                         &kp HOME                  &trans              &kp K_PREVIOUS   &kp K_NEXT       &kp K_MUTE        &kp C_VOL_UP
+&mt LEFT_COMMAND GRAVE  &trans                &kp LA(LEFT_ARROW)     &kp UP_ARROW              &kp LA(RIGHT_ARROW)        &kp PAGE_UP                                                      &kp PAGE_UP               &kp RA(LEFT_ARROW)  &kp UP_ARROW     &kp RA(RIGHT)    &kp K_PLAY_PAUSE  &mt RIGHT_COMMAND K_VOLUME_DOWN
+&trans                  &trans                &kp LEFT_ARROW         &kp DOWN_ARROW            &kp RIGHT_ARROW            &kp PAGE_DOWN                                                    &kp PAGE_DOWN             &kp LEFT_ARROW      &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans            &trans
+&mt LEFT_SHIFT CAPS     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE            &kp RIGHT_BRACE            &kp END                  &kp LG(LA(SPACE))    &kp RG(RA(SPACE))  &kp END                   &kp PIPE            &kp SEMICOLON    &kp COLON        &kp BACKSLASH     &mt RIGHT_SHIFT CAPSLOCK
+                                                                     &mt LCTRL RET             &mt LEFT_ALT TAB           &mt LEFT_COMMAND ESCAPE  &mo 2                &mo 2              &mt RIGHT_COMMAND ESCAPE  &mt RIGHT_ALT TAB   &mt RCTRL ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
